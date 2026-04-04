@@ -1,1 +1,56 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Take a Seat — Melissa &amp; David</title>
+  <meta name="description" content="Seating chart for Melissa &amp; David — 04.25.2026, Fallbrook, CA" />
+  <meta property="og:title" content="Take a Seat — Melissa &amp; David" />
+  <meta property="og:image" content="seating-chart.png" />
+  <link rel="preload" as="image" href="seating-chart.png" />
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body {
+      background: #faf7f2;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #2b2b2b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: clamp(12px, 3vw, 40px);
+      padding-bottom: max(24px, env(safe-area-inset-bottom));
+    }
+    .card {
+      width: 100%;
+      max-width: 900px;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+    .card img { display: block; width: 100%; height: auto; }
+    .hint {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #8a8070;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+    @media (max-width: 600px) {
+      body { padding: 0; background: #ffffff; }
+      .card { border-radius: 0; box-shadow: none; max-width: 100%; }
+      .hint { padding: 0 16px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <a href="seating-chart.png" target="_blank" rel="noopener">
+      <img src="seating-chart.png" alt="Wedding seating chart — Melissa &amp; David, April 25 2026, Fallbrook CA. Tables 1 through 11 with guest names." />
+    </a>
+  </main>
+  <p class="hint">Tap the chart to zoom &middot; Find your name &amp; table number</p>
+</body>
+</html>
